@@ -4,12 +4,21 @@ adolescentes=0
 adultos=0
 ancianos=0
 
-edad=int(input("¿Cuantas veces quieres clasificar las edades?"))
+edades=int(input("¿Cuantas veces quieres clasificar las edades?"))
 
-for edades in range(edad):
+for i in range(edades):
+    edad=int(input(f"Ingresa la edad {i+1}º:  "))
     if edad < 12:
         niños+=1
     else:
-        if <=13 edad <=19:
+        if <12 edad <19:
             adolescentes+=1
         else:
+            if <=20 edad <=55:
+                adulo+=1
+            else:
+                anciano+=1
+    
+    print("")
+    print("")
+    print("")
